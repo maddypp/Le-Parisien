@@ -1,0 +1,254 @@
+@media (max-width: 890px) {
+    .navbar-toggle {
+        display: block;
+        color: white;
+        background-color: #333;
+    }
+    .navbar-collapse {
+        display: none;
+    }
+    .navbar-collapse.collapse.active {
+        display: block;
+    }
+    .navbar-nav {
+        margin-top: 0;
+        background-color: rgba(255,255,255,0.92);
+        position: fixed;
+        width: 100%;
+        top: 50px; /* Adjust this value to match the height of your navbar */
+        z-index: 9998;
+        box-shadow: 9px 9px 9px rgba(0,0,0,0.17);
+    }
+    .navbar-nav li {
+        text-align: center;
+        margin: 10px 0;
+    }
+    .navbar-nav li a {
+        color: black;
+    }
+    .navbar-toggle:hover .icon-bar {
+        background-color: black;
+    }
+}
+
+
+
+
+
+.text {
+    float: right;
+    color: black;
+}
+
+.bar {
+    background-color: rgba(255,255,255,0.92);
+    height: 50px;
+    z-index: 9999;
+    box-shadow: 9px 9px 9px rgba(0,0,0,0.17);
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.item {
+    color: black;
+
+}
+
+.text a :hover {
+    color: black;
+    visibility: initial;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: black;
+}
+  
+.hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.icon {
+    width: 30px;
+    height: auto;
+    margin-top: -5px;
+}
+
+.body {
+    margin-top: 50px;
+    padding: 0;
+}
+
+.title_div {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Rouge Script', cursive;
+    font-size: 50px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+.p {
+    font-family: 'Noto Serif', serif;
+}
+
+.Wtitle {
+    font-family: 'Rouge Script', cursive;
+    text-align: center;
+}
+
+.img {
+    align-items: center;
+    height: 100vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Wdiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+    margin: 10px;
+}
+
+.Ourwork {
+    text-align: center;
+}
+
+.C_img {
+    width: 100%;
+    height: auto;
+    border: 0.001px solid white;
+    border-radius: 10px;
+}
+
+.C_btn {
+    color: black;
+}
+
+.C_btn :hover {
+    color: black;
+}
+
+.aboutus {
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.atitle {
+    font-family: 'Rouge Script', cursive;
+}
+
+.weoffer {
+    text-align: center;
+}
+
+.Wgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 30px;
+    row-gap: 30px;
+    column-gap: 30px;
+}
+
+.W {
+    text-align: center;
+}
+
+.Wimg {
+    border: 1px solid white;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.sq {
+    text-align: center;
+    font-family: 'Rouge Script', cursive;
+    text-align: center;
+}
+
+.sgrd {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    row-gap: 30px;
+    column-gap: 30px;
+}
+
+.g {
+    text-align: center;
+}
+
+.si {
+    border: 1p solid white;
+    border-radius: 20px;
+    width: 95%;
+}
+
+.contectus {
+    text-align: center;
+    font-family: 'Rouge Script', cursive;
+}
+
+.hr {
+    color: black;
+    width: 300px;
+}
+
+.c {
+    font-size: 17px;
+}
+
+.cgrid {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cimg {
+    width: 40px;
+    margin: 10px;
+}
+
+@media (max-width: 890px) {
+    .Wgrid {
+        grid-template-columns: 1fr;
+    }
+    .sgrd {
+        flex-direction: column;
+    }
+    .Wdiv {
+        grid-template-columns: 1fr 1fr;
+    }
+}
